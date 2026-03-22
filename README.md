@@ -58,3 +58,46 @@ The top tasks are selected based on a specified limit
 The final prioritized list is returned
 
 Visual Representation
+[Task List]
+     ↓
+[Calculate Score for Each Task]
+     ↓
+[Sort Tasks by Score (High → Low)]
+     ↓
+[Select Top Tasks]
+     ↓
+[Final Priority Task List]
+
+Code Explanation
+
+The algorithm uses three main functions:
+
+1. Task Scoring Function
+Assigns a numerical score to each task
+Considers priority, due date, status, tags, and updates
+Higher score = higher importance
+2. Sorting Function
+Sorts all tasks based on their scores
+Uses descending order (highest score first)
+3. Top Task Selection
+Selects only the top tasks using a limit
+Returns the most important tasks
+
+Time Complexity
+Calculating scores: O(n)
+Sorting tasks: O(n log n)
+Selecting top tasks: O(k)
+
+Overall complexity: O(n log n)
+
+Insights and Learning Points
+Real-world algorithms often combine multiple factors instead of using a single rule
+The scoring system allows more flexible and accurate prioritization
+Due dates significantly affect task importance
+Completed tasks are deprioritized using negative scoring
+AI helped break down and explain complex logic
+Small scoring adjustments can significantly impact results
+
+Conclusion
+
+This project demonstrates how a dynamic scoring algorithm can be used to prioritize tasks effectively. By combining multiple factors, the algorithm provides a more realistic and useful way of organizing tasks compared to simple sorting methods.
